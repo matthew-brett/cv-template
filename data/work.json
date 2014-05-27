@@ -1,0 +1,29 @@
+[
+    {
+        "institution": "University of California, Berkeley",
+        "location": "Berkeley, CA",
+        "positions": [
+            {
+                "title": "Scientific Programmer",
+                "org": "Brain Imaging Center",
+                "dates": "2010--2012"
+            }, 
+            {
+                "title": "Director of Computing",
+                "org": "Neuroscience Institute",
+                "dates": "2004--2010"
+            }
+        ]
+    },
+    {
+        "institution": "University of California, Davis",
+        "location": "Davis, CA",
+        "positions": [
+            {
+                "title": "Scientific Programmer",
+                "org": "Center for Neuroscience",
+                "dates": "1998--2000"
+            }
+        ]
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "service": "National",
+        "talks": [
+            {
+                "title": "Neuroimaging in Python (NiPy) Architecture",
+                "event": "Half-day course at the 19th Annual Meeting of the Organization for Human Brain Mapping entitled 'Neuroimaging Big Data Challenges and Computational Workflow Solutions'",
+                "location": "Seattle, WA",
+                "date": "June 2013"
+            },
+            {
+                "title": "Reproducibility and Computationally Intensive, Data-driven Research",
+                "event": "Mini-symposium at the SIAM Conference on Computational Science and Engineering entitled 'Reproducibility and Computationally Intensive, Data-driven Research'",
+                "location": "Boston, MA",
+                "date": "February 2013"
+            }
+         ]
+    },
+    {
+        "service": "International",
+        "talks": [
+            {
+                "title": "The challenge of reproducible research in the computer age",
+                "event": "Workshop at the Applied Mathematics Perspective meeting entitled Reproducible Research: Tools and Strategies for Scientific Computing",
+                "location": "University of British Columbia, Canada",
+                "date": "July 2011"
+            },
+            {
+                "title": "Experimental data and scientific computing",
+                "event": "SciPy India Conference",
+                "location": "International Institute of Information Technology, Hyderabad, Andhra Pradesh India",
+                "date": "December 2010"
+            }
+        ]
+    }
+]
+

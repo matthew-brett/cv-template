@@ -1,0 +1,42 @@
+[
+    {
+        "service": "Editorial",
+        "positions": [
+            {
+                "title": "Review Editor",
+                "org": "Frontiers in Neuroinformatics",
+                "dates": "2011--present"
+            }
+        ]
+    },
+    {
+        "service": "Committee",
+        "positions": [
+            {
+                "title": "Calnet Technical Team",
+                "org": "University of California, Berkeley",
+                "dates": "2005--2009"
+            }
+        ]
+    },
+    {
+        "service": "Conference",
+        "positions": [
+            {
+                "title": "Program Committee",
+                "org": "EuroSciPy",
+                "dates": "2010--2011"
+            }
+        ]
+    },
+    {
+        "service": "Software",
+        "positions": [
+            {
+                "title": "Board of Directors",
+                "org": "NumFOCUS",
+                "dates": "2011--present"
+            }
+        ]
+    }
+]

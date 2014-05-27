@@ -1,0 +1,22 @@
+[
+    {
+        "institution": "University of California, Berkeley",
+        "years": "2012--present",
+        "degrees": [
+            "Graduate school in Biostatistics"
+        ]
+    },
+    {
+        "institution": "Cornell University",
+        "years": "1995--1998",
+        "degrees": [
+            "BA in Mathematics and Computer Science",
+            "Minor in Cognitive Studies"
+        ]
+    },
+    {
+        "institution": "Deep Springs College",
+        "years": "1993--1995",
+        "degrees": []
+    }
+]

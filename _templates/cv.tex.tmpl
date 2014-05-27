@@ -1,0 +1,101 @@
+\documentclass{cv} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{url}
+
+% bibliography with mutiple entries
+\usepackage[resetlabels]{multibib}
+\newcites{journal,proceedings,editorial,abstracts,reports}{ {Refereed journal articles},{Refereed book chapters and conference proceedings},{Editorial articles},{Conference abstracts},{Technical reports} }
+
+\begin{document}
+
+{\huge \bf K. Jarrod Millman}
+
+101 Haviland Hall             \hfill \url{http://jarrodmilllman.com} \\
+Division of Biostatistics, School of Public Health \hfill
+ \href{mailto:millman@berkeley.edu}{\nolinkurl{millman@berkeley.edu} } \\
+University of California, Berkeley \\
+Berkeley, CA 94720 USA 
+
+\begin{cvSection}{Education}
+
+{{for ed in education}} 
+
+{\bf {{ed['institution']}} } \hfill {\em {{ed['years']}} }
+{{for degree in ed['degrees'] }} \\
+{{degree}} 
+{{endfor}}
+{{endfor}}
+\end{cvSection}
+
+\begin{cvSection}{Work History}
+
+{{for job in jobs}} 
+
+{\bf {{job['institution']}}}, {\em {{job['location']}} }
+{{for position in job['positions'] }} \\
+{{position['title']}}, {\em {{position['org']}} } \hfill {\em {{position['dates']}} }
+{{endfor}}
+{{endfor}}
+\end{cvSection}
+
+\begin{cvSection}{Teaching Experience}
+
+{{for school in teaching}} 
+
+{\bf {{school['institution']}}}
+{{for position in school['positions'] }} \\
+{{position['number']}}, {\em {{position['title']}} } \hfill {\em {{position['term']}} }
+{{endfor}}
+{{endfor}}
+\end{cvSection}
+
+
+\begin{cvSection}{Professional Service}
+
+{{for serv in services}}
+
+{\bf {{serv['service']}} }
+{{for post in serv['positions'] }} \\
+{{post['title']}}, {{post['org']}} \hfill {\em {{post['dates']}} }
+{{endfor}}
+{{endfor}}
+\end{cvSection}
+
+\begin{cvSection}{Presentations}
+
+{{for present in presentations}}
+
+{\bf {{present['service']}} }
+\begin{itemize}
+{{for talk in present['talks'] }}
+
+\item {{talk['title']}}. {\em {{talk['event']}}}, {{talk['location']}}, {{talk['date']}}.
+{{endfor}}
+\end{itemize}
+{{endfor}}
+\end{cvSection}
+
+\begin{cvSection}{Publications}
+
+\nocitejournal{ghosh2012future}
+\bibliographystylejournal{unsrt}
+\bibliographyjournal{data/publications}
+\nociteproceedings{millman2014oss, millman2008scipy}
+\bibliographystyleproceedings{unsrt}
+\bibliographyproceedings{data/publications}
+\nociteeditorial{neylon2012changing}
+\bibliographystyleeditorial{unsrt}
+\bibliographyeditorial{data/publications}
+\nociteabstracts{millman2011neuroinformatics}
+\bibliographystyleabstracts{unsrt}
+\bibliographyabstracts{data/publications}
+\nocitereports{sommer2007sharing}
+\bibliographystylereports{unsrt}
+\bibliographyreports{data/publications}
+
+\end{cvSection}
+
+
+\end{document}
