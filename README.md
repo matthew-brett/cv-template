@@ -1,4 +1,7 @@
-cv-template
-===========
+Creating your curriculum vitae
+==============================
 
-Template for creating a curriculum vitae (CV) using JSON and tempita
+The content is stored as JSON and BibTeX in the `data` directory. To create a
+PDF, run `make`.  Currently this will build a tex file based on the template
+`_templates/cv.tex.tmpl` and then create a PDF from that by running `bibtex`
+and `pdflatex`.
