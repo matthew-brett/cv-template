@@ -4,21 +4,38 @@
 \usepackage[parfill]{parskip}
 \usepackage{array}
 \usepackage{ifthen}
+\usepackage{changepage}
+\usepackage{needspace}
+\usepackage{xparse}
 
 % Defines the rSection environment for the large sections within the CV
-\newenvironment{cvSection}[1]{ % 1 input argument - section name
+% Optional arguments from
+% http://tex.stackexchange.com/questions/11349/how-do-you-define-your-environment-such-as-to-use-for-some-parameters
+% Indentation trick from
+% http://tex.stackexchange.com/questions/35933/indenting-a-whole-paragraph
+\NewDocumentEnvironment{cvSection}{m O{}}{
+    % 1 input argument - section name
+    % 1 optional argument - extra markup at end of section
+  \Needspace{6\baselineskip}
+  {\bf \MakeUppercase{#1}}#2 % Section title plus any extra stuff
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
-  \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+  \begin{adjustwidth}{0.5cm}{}
   }
-  \item[]
-}{
-  \end{list}
+  {\end{adjustwidth}
+}
+
+% A subsection of the CV, within a main section.  Extra indentation.
+\NewDocumentEnvironment{cvSubSection}{m O{}}{
+    % 1 input argument - subsection name
+    % 1 optional argument - extra markup at end of subsection name
+    \Needspace{4\baselineskip}
+    {\em #1}#2
+    \begin{adjustwidth}{0.5cm}{}
+    }
+    {\end{adjustwidth}
 }
 
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\sectionskip{\medskip} % The space after the heading section
-
